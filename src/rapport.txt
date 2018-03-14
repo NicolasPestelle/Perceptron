@@ -1,0 +1,20 @@
+2 ) Lorsque le nombre de points augmentent : fait plus d'erreur lors de l'apprentissage (logique plus de données a gérer).
+	La réciproque est vrai.
+
+3) Si le pas d'apprentissage est trop petit : 0.00000000001 -> résultat ne changent pas(meme nombre d'erreur)
+
+Si le pas est petit : 0.00001 -> évolue trés trés lentement
+
+si le pas est moins petit : 0.1 -> réussite au bout d'environ 40 a 50 itérations
+
+si le pas est grand : 100 -> réussite mais aléatoire entre 15 a 80 itérations
+
+si le pas est plus grand : 10000 -> évolution lente car il n'arrive pas à trouver progressivement l'angle de la séparatrice (trop aléatoire)
+
+
+Solution : pas de pas fixe mais évolutif : le pas vas beaucoup varier au début pour petit a petit s'affiner
+
+4) pas de réussite car non linéaire.
+
+5) Erreur en généralisation assez faible : entre 0 et 9 erreur / 500
+

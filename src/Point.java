@@ -9,15 +9,16 @@ public class Point {
 		x1 = Math.random();
 		x2 = Math.random();
 		
-		if(x1+x2-1>0) {
+		if(x1+x2-1>0 ) {
 			this.etiquette = 1;
 		}else {
 			this.etiquette =-1;
 		}
 	}
 	
-	public void display() {
-		System.out.println(""+this.x1+" "+this.x2+" "+this.etiquette);
+	public String display() {
+		String s;
+		return s = ""+this.x1+" "+this.x2+" "+this.etiquette;
 	}
 
 }
